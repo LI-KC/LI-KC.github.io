@@ -15,7 +15,7 @@ function setUserName() {
         setUserName();
     } else {
         localStorage.setItem('name', myName);
-        myHeading.innerHTML = 'Hello welcome to chi space ' + myName;
+        myHeading.innerHTML = 'Hello welcome to Anson space ' + myName;
     }
 }
 
@@ -23,7 +23,7 @@ if (!localStorage.getItem('name')) {
     setUserName();
 } else {
     let storedName = localStorage.getItem('name');
-    myHeading.innerHTML = 'Hello welcome to chi space ' + storedName; 
+    myHeading.innerHTML = 'Hello welcome to Anson space ' + storedName; 
 }
 
 myButton.onclick = function() {
