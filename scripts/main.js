@@ -1,7 +1,8 @@
 let myHeading = document.querySelector('h1');
 myHeading.textContent = 'HelloWorld!';
 
-let myHTML = document.querySelector('html');
+let myHTML1 = document.querySelector('html');
+let myHTML2 = document.querySelector('html');
 let myImg = document.querySelector('img');
 let myButton = document.querySelector('button');
 
@@ -37,7 +38,7 @@ if (myHeading.textContent === 'HelloWorld!'){
 }
 
 
-myHTML.onclick = function() {plzstop();}
+myHTML1.onclick = function() {plzstop();}
 
 myImg.onclick = function() {
     let Atr = myImg.getAttribute('src');
@@ -46,4 +47,17 @@ myImg.onclick = function() {
     } else {
         myImg.setAttribute ('src', 'images/cat.jfif');
     }
+}
+
+myHTML2.onclick = function() {
+    const listItem = document.createElement('li');
+    const listContent = prompt('What content do you want the list item to have?');
+    listItem.textContent = listContent;
+    document.body.appendChild(listItem);
+}
+
+for(let i = 0;i < 5; i++){
+    const button = document.createElement('button');
+    button.innerHTML = "CLICK ME!" + i;
+    document.body.appendChild(button);
 }
