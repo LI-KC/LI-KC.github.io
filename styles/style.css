@@ -1,19 +1,9 @@
 p, li{
     color: rosybrown;
-    width: 500px;
+    width: 50%;
     border: 1px solid black;
     font-size: 30px;
     text-align: center;
-}
-
-.highlight {
-    background-color: #eeee33;
-    margin: 10px 10px 10px 0;
-}
-
-.nobox {
-    border: 0 solid black;
-    text-align: left;
 }
 
 a {
@@ -22,7 +12,7 @@ a {
 
 h1{
     margin: 0;
-    padding: 20px 0;
+    padding: 10px 0 0 0;
     color: rosybrown;
     text-shadow: 3px 3px 5px gray;
 }
@@ -39,4 +29,24 @@ html{
     background-color:rgb(255, 255, 255);
     margin: auto auto;
     padding: 0 20px 20px 20px;
+}
+
+nav {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.highlight {
+background-color: #eeee33;
+margin: 10px 10px 10px 0;
+}
+
+.nav {
+    margin: 10px 10px 10px 10px;
+}
+
+.nobox {
+    border: 0 solid black;
+    text-align: left;
+    margin: 20px 0;
 }
